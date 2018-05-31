@@ -21,5 +21,5 @@ Just like everything else, this is a **work in progress**,  but I'm not a fan of
 - `npm run build`: Run webpack in prod mode, minifying everything on dist/ folder, which is generated.
 - `npm run test`: Runs all tests
 
-# Tweak the process
+## Tweak the process
 If you want to change any step, check out everything I did inside INSTRUCTIONS-PT.md
