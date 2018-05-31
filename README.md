@@ -13,9 +13,13 @@ Just like everything else, this is a **work in progress**,  but I'm not a fan of
 
 1. Clone this repo
 2. Run `npm install`
-3. Be happy
+3. See it running with `npm run start`
+4. Be happy
 
 ## Scripts
 - `npm run start`: Run webpack dev server in dev mode with Hot Reload and un-minified html/js.
 - `npm run build`: Run webpack in prod mode, minifying everything on dist/ folder, which is generated.
 - `npm run test`: Runs all tests
+
+# Tweak the process
+If you want to change any step, check out everything I did inside INSTRUCTIONS-PT.md

@@ -12,12 +12,12 @@
 ## Pra fazer na mão:
 
 ### Pre-webpack
-1. Gerar package.json
+1. Gere o package.json:
 ```
 npm init -y
 ```
 
-2. Configurar o .gitignore para excluir os seguintes arquivos:
+2. Configure o .gitignore para excluir os seguintes arquivos:
 
 ```
 node_modules/
@@ -26,13 +26,13 @@ node_modules/
 dist/
 ```
 ### Webpack
-3. Baixar o webpack, webpack-cli e o dev-server
+3. Baixe o webpack, webpack-cli e o dev-server:
 
 ```
 npm i --save-dev webpack webpack-cli webpack-dev-server
 ```
 
-4. Adicionar os scripts no package.json
+4. Adicione os scripts no package.json:
 
 ```
 "scripts" : {
@@ -43,14 +43,15 @@ npm i --save-dev webpack webpack-cli webpack-dev-server
 
 > O próprio mode de production do webpack se responsabiliza por minificar o JS.
 
+
 ### React
-5. Baixar o react e react-dom
+5. Baixe o react e react-dom:
 
 ```
 npm i --save react react-dom
 ```
 
-6. Baixar as dependências do Babel
+6. Baixe as dependências do Babel:
 
 ```
 npm i --save-dev babel-core babel-loader babel-preset-env babel-preset-react
@@ -64,7 +65,8 @@ npm i --save-dev babel-core babel-loader babel-preset-env babel-preset-react
 > 
 > **babel-preset-react:** preset para os plugins de React.
 
-7. Criar arquivo de config do webpack:
+
+7. Crie arquivo de config do webpack:
 
 ```
 module.exports = {
@@ -80,13 +82,13 @@ module.exports = {
 }
 ```
 
-8. Criar um arquivo chamado `.babelrc` para adicionar as opções do loader
+8. Crie um arquivo chamado `.babelrc` para adicionar as opções do loader:
 
 ```
 { "presets": ["env", "react"] }
 ```
 
-9. Crie um arquivo index.js para renderizar um componente do React
+9. Crie um arquivo index.js para testar a renderização de um componente do React:
 
 ```
 import React from 'react';
@@ -99,7 +101,7 @@ const Index = () => (
 ReactDOM.render(<Index/>, document.getElementById('root'));
 ```
 
-10. Crie um arquivo index.html dentro de src para adicionar o elemento com id `root`
+10. Crie um arquivo index.html dentro de src para fazer o bind do React no elemento com id `root`:
 
 ```
 <!DOCTYPE html>
@@ -115,13 +117,13 @@ ReactDOM.render(<Index/>, document.getElementById('root'));
 ```
 
 ### HTML (minifica e adiciona scripts)
-11. No terminal, instalar o html-webpack-plugin
+11. No terminal, instale o html-webpack-plugin:
 
 ```
 npm i --save-dev html-webpack-plugin
 ```
 
-12. Atualize o webpack.config.js
+12. Atualize o webpack.config.js:
 
 ```
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -146,7 +148,7 @@ module.exports = {
 };
 ```
 
-13. Rode `npm run start` e veja se foi criada uma pasta dist com o index.html e um main.js. 
+13. Rode `npm run start` e veja se foi criada uma pasta dist com o index.html e um main.js.
 > Se abrir o dist/index.html, você deve ver Hello React na página.
 
 ### SASS/CSS
@@ -158,7 +160,7 @@ npm i --save-dev sass-loader node-sass style-loader extract-text-webpack-plugin 
 
 > Extract Text Webpack Plugin precisa ser instalado na versão `^4.0.0-beta.0` por questões de compatibilidade com o webpack 4.
 
-15. Atualize o arquivo de configuração do webpack
+15. Atualize o webpack.config.js:
 
 ```
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -193,13 +195,13 @@ module.exports = {
 
 ### Jest
 
-16. Instale o Jest
+16. Instale o Jest:
 
 ```
 npm i --save-dev jest
 ```
 
-17. Adicione o script de test no package.json
+17. Adicione o script de test no package.json:
 
 ```
  "scripts": {
@@ -210,13 +212,14 @@ npm i --save-dev jest
   
 ```
 
-18. Depois de criar o arquivo de teste e implementação, veja a mágica funcionar com
+18. Depois de criar o arquivo de teste e implementação, veja a mágica funcionar com:
 
 ```
 npm run test
 ```
+
 ### Redux
-19.Instale o Redux
+19. Instale o Redux:
 
 ```
 npm i --save redux react-redux
